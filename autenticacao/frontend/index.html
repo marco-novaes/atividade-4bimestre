@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Sistema de Autenticação</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- LOGIN -->
+        <div id="telaLogin" class="card">
+
+            <h1>Login</h1>
+
+            <p class="subtitulo">
+                Entre na sua conta
+            </p>
+
+            <form id="loginForm">
+
+                <div class="campo">
+
+                    <label for="email">
+                        E-mail
+                    </label>
+
+                    <input
+                        type="email"
+                        id="email"
+                        placeholder="Digite seu e-mail"
+                        required
+                    >
+
+                </div>
+
+                <div class="campo">
+
+                    <label for="senha">
+                        Senha
+                    </label>
+
+                    <input
+                        type="password"
+                        id="senha"
+                        placeholder="Digite sua senha"
+                        required
+                    >
+
+                </div>
+
+                <button type="submit">
+                    Entrar
+                </button>
+
+            </form>
+
+            <p id="mensagemLogin"></p>
+
+            <div class="dados-teste">
+
+                <strong>Usuário para teste:</strong>
+
+                <p>
+                    E-mail: joao@email.com
+                </p>
+
+                <p>
+                    Senha: 123456
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- ÁREA LOGADA -->
+
+        <div
+            id="telaUsuario"
+            class="card"
+            style="display: none;"
+        >
+
+            <h1>Área do Usuário</h1>
+
+            <p id="mensagemUsuario"></p>
+
+            <div class="perfil">
+
+                <h2>Perfil</h2>
+
+                <p>
+                    <strong>Nome:</strong>
+                    <span id="nomeUsuario"></span>
+                </p>
+
+                <p>
+                    <strong>E-mail:</strong>
+                    <span id="emailUsuario"></span>
+                </p>
+
+            </div>
+
+            <button
+                id="btnPerfil"
+                class="btn-secundario"
+            >
+                Atualizar perfil
+            </button>
+
+            <button
+                id="btnLogout"
+                class="btn-sair"
+            >
+                Sair
+            </button>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
